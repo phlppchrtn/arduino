@@ -1,11 +1,11 @@
-/*
-/* Grove - Temprature Sensor demo v1.0
-*  This sensor detects the enviroment temprature,
-*  Connect the signal of this sensor to A0, use the 
-*  Serial monitor to get the result.
-*  By: http://www.seeedstudio.com
-*/
 #include <math.h>
+
+/* 
+ * 1. Connect sensor temperature on A0.
+ * 2. Open Serial Monitor.
+ *
+ * Temperature will be displayed. 
+*/
 int a;
 float temperature;
 int B=3975;                  //B value of the thermistor

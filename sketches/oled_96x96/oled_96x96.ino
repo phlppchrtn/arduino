@@ -2,6 +2,9 @@
 #include <SeeedGrayOLED.h>
 #include <avr/pgmspace.h>
 
+/*
+ * 1. Connect oled 96X96 on I2C; 
+ */ 
 
 void setup()
 {
@@ -14,7 +17,7 @@ void setup()
   for(char i=0; i < 12 ; i++)
   {
   SeeedGrayOled.setTextXY(i,0);  //set Cursor to ith line, 0th column
-  SeeedGrayOled.setGrayLevel(i); //Set Grayscale level. Any number between 0 - 15.
+  //SeeedGrayOled.setGrayLevel(i); //Set Grayscale level. Any number between 0 - 15.
   SeeedGrayOled.putString("Hello World"); //Print Hello World
   }
 }

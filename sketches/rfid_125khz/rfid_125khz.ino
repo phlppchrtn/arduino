@@ -1,9 +1,14 @@
+#include <SoftwareSerial.h>
+
+/*
+ * 1. Connect 
+ *
+ */ 
 // link between the computer and the SoftSerial Shield
 //at 9600 bps 8-N-1
 //Computer is connected to Hardware UART
 //SoftSerial Shield is connected to the Software UART:D2&D3 
  
-#include <SoftwareSerial.h>
  
 SoftwareSerial SoftSerial(2, 3);
 unsigned char buffer[64]; // buffer array for data recieve over serial port
