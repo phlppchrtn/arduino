@@ -49,10 +49,10 @@ public class IOTManager implements Manager, Activeable {
 		System.out.println("send>>" + messageInfo.getMessageSent());
 	}
 
-	//	public int analogRead(final int pin) throws Exception {
-	//		final MessageInfo messageInfo = link.startListenAnalogPin(pin);
-	//		messageInfo.
-	//	}
+	public int analogRead(final int pin) throws Exception {
+		final MessageInfo messageInfo = link.startListenAnalogPin(pin);
+		return messageInfo.getReply();
+	}
 
 	//	public boolean digitalRead(final int pin) throws Exception {
 	//		final MessageInfo messageInfo = link.startListenAnalogPin(pin)sendPowerPinSwitch(pin, active ? IProtocol.HIGH : IProtocol.LOW); // 5
